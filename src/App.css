@@ -27,7 +27,42 @@
 .App-link {
   color: #61dafb;
 }
-
+input[type=text] {
+  width: 100%;
+  padding: 1em;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.drawer{
+  min-height: 100%;
+   background: white;
+   position: fixed;
+   top: 0;
+   right: 0; 
+   width: 35%;
+   z-index: 200;
+   box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+   transform: translateX(100%);
+   transition: transform 0.3s 0.1s ease-out;
+}
+.drawer.open {
+  transform: translateX(0);
+}
+.addMarginTopBot > *{
+padding:1em 0;
+outline: 1px solid red;
+}
+button{
+  padding:1em;
+  cursor: pointer;
+}
+.bottomFooter{
+  position: fixed;
+  bottom: 0;
+  margin: 1em 1em 0.5em;
+  display: flex;
+  gap: 1em;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +71,4 @@
     transform: rotate(360deg);
   }
 }
+
